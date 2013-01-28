@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title> Bazinga Converter
+	</title>
+	</head>
+<body style="background-color:red">
+<p><strong><h1><center><big>Mileage Converter</big></center></h1></strong></p><br />
+<hr />
+<hr />
+<br />
+<br />
+<form><center>
+	<input type="button" value="Convert" onclick="converter()>
+</center></form>
+
+
+
+
+
+
+
+
+</html>
