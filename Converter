@@ -1,19 +1,41 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 	<title> Bazinga Converter
 	</title>
 	</head>
+<script Language="Javascript">
+function multiplyCov(MPG){
+		document.converter.KilometersPerLiter.value=MPG * .4251437
+		}
+function multiplyCov2(KPL){
+	document.converter.MilesPerGallon.value=KPL*2.3521455
+		
+	}
+function bazinga(x){
+	alert(x);
+	}
+</script>
 <body style="background-color:red">
 <p><strong><h1><center><big>Mileage Converter</big></center></h1></strong></p><br />
 <hr />
 <hr />
 <br />
 <br />
-<form><center>
-	<input type="button" value="Convert" onclick="converter()>
+
+<center>
+<form name=converter>
+MPG:<input type="text" name="MilesPerGallon" style="background-color: blue" size="10" maxlength="50"/>
+<input type="button" value="Convert" ONClick="multiplyCov(MilesPerGallon.value)">
+<input type="button" value="Convert Back" ONClick="multiplyCov2(KilometersPerLiter.value)">
+<input type="button" value="Guess" Onclick="bazinga('BAZINGA')">
+
+KPL:<input type="text" name="KilometersPerLiter" style="background-color: blue" size="10" maxlength="50"/>
+
 </center></form>
+</body>
 
 
 
@@ -22,4 +44,5 @@
 
 
 
-</html>
+
+
