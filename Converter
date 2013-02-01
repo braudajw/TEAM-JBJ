@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html>
-
+ 
 <head>
-	<meta charset="utf-8">
-	<title> Bazinga Converter
-	</title>
-	</head>
-<script Language="Javascript">
-function multiplyCov(MPG){
-		document.converter.KilometersPerLiter.value=MPG * .4251437
-		}
-function multiplyCov2(KPL){
-	document.converter.MilesPerGallon.value=KPL*2.3521455
-		
-	}
-function bazinga(x){
-	alert(x);
-	}
-</script>
+            <meta charset="utf-8">
+            <title> Bazinga Converter
+            </title>
+            </head>
+ 
 <body style="background-color:red">
 <p><strong><h1><center><big>Mileage Converter</big></center></h1></strong></p><br />
 <hr />
 <hr />
 <br />
 <br />
-
+ 
 <center>
+ 
 <form name=converter>
-MPG:<input type="text" name="MilesPerGallon" style="background-color: blue" size="10" maxlength="50"/>
-<input type="button" value="Convert" ONClick="multiplyCov(MilesPerGallon.value)">
-<input type="button" value="Convert Back" ONClick="multiplyCov2(KilometersPerLiter.value)">
-<input type="button" value="Guess" Onclick="bazinga('BAZINGA')">
-
-KPL:<input type="text" name="KilometersPerLiter" style="background-color: blue" size="10" maxlength="50"/>
-
+MPG:<input type="text" name="MilesPerGallon" style="background-color: white" size="10" maxlength="50"/>
+<input type="button" value="MPG to KMPL" ONClick="multiplyCov(MilesPerGallon.value); alert('BAZINGA!')">
+<input type="button" value="Clear" ONClick="this.form.reset()">
+<input type="button" value="KMPL to MPG" ONClick="multiplyCov2(KilometersPerLiter.value); alert('BAZINGA!')">
+KMPL:<input type="text" name="KilometersPerLiter" style="background-color: white" size="10" maxlength="50"/>
+ 
 </center></form>
-</body>
 <br />
 <br />
 <center>
-<img src="http://lh5.ggpht.com/_FJwoY0WBqX8/SzZzAqVEDqI/AAAAAAAAB-0/S7nzVBk9SeE/s512/FuelGauge.jpg"/>
+<img src="http://3.bp.blogspot.com/_Vx5cKuXjTvs/Ss5WVBUSdhI/AAAAAAAAHKs/hK4bZRPtOj8/s400/Speedometer.jpg"/>
+ 
+<script Language="Javascript">
+function multiplyCov(MPG){
+                        document.converter.KilometersPerLiter.value= MPG * .4251437
+                        }
+function multiplyCov2(KMPL){
+                        document.converter.MilesPerGallon.value= KMPL* 2.3521455
+                        }
+function bazinga(){
+            alert('BAZINGA');
+            }
+</script>
+ 
 </body>
 </html>
-
 
 
 
